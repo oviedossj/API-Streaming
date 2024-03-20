@@ -17,7 +17,9 @@ To install this project the commands are:
 ## Run in LOCAL
 
 To run this project in Local the command that you need use is:
+
         docker-compose up -d
+
         npm run dev
 
 
