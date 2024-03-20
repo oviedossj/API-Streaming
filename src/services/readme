@@ -1,0 +1,52 @@
+// import logger from '@/utils/logger';
+// import MovieRepository from '@/repositories/movie.repositories';
+// import CategoriRepository from '@/repositories/categories.repositories';
+// import {IMovie, ICategory,IMovieService} from '@/models'
+
+// class MovieService implements IMovieService<IMovie,ICategory>{
+//   constructor(private MovieRepository: MovieRepository,private CategoryRepositoriy :CategoriRepository ) {}
+
+
+//   async getMoviesbyId(MovieIds: string): Promise<IMovie> {
+//     try {
+//       const movie = await this.MovieRepository.getMovie(MovieIds);
+//       if (!movie || movie == undefined) throw new Error(`Could not find movie with ID: ${MovieIds}`);
+//       return movie
+//     } catch (error) {
+//       logger.error('Error at MovieService.getMovies -> ', error);
+//       throw error;
+//     }
+//   }
+//   async getMoviesbyCategory(CategorieIds: string): Promise<IMovie[]> {
+//     try {
+//       const movies = await this.MovieRepository.getMovies(CategorieIds);
+//       if (!movies|| movies == undefined) throw new Error(`Could not find Category with ID: ${CategorieIds}`);
+//       return movies
+      
+//     } catch (error) {
+//       logger.error('Error at MovieService.getMovies -> ', error);
+//       throw error;
+//     }
+// }
+// async getCategory(): Promise<ICategory> {
+//   try {
+//     const movies = await this.CategoryRepositoriy.getCategories();
+//     if (!movies || movies == undefined) throw new Error(`Could not find Category `);
+//     return movies
+//   } catch (error) {
+//     logger.error('Error at MovieService.getMovies -> ', error);
+//     throw error;
+//   }
+// }
+// }
+// export default MovieService;
+// // return {
+// //   __typename: "Movie",
+// //   id: movie.id, // Asegúrate de que esta propiedad existe en el objeto retornado por getMovieById
+// //   title: movie.title,
+// //   description: movie.description,
+// //   category: await movieController.getCategoryById(movie.categoryId), // Suponiendo que exista categoryId
+// //   year: movie.year,
+// //   director: movie.director,
+// //   actors: movie.actors,
+// // };

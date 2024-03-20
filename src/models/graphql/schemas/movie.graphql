@@ -1,0 +1,23 @@
+  type Query {
+    Movie(MovieIds: ID!): Movie
+    Movies(CategorieIds: ID!): [Movie!]
+    Category: [Category!]
+  }
+
+  type Category {
+    _id: ID!
+    name: String!
+    flims: [Movie!]
+  }
+
+  type Movie {
+    _id: ID!
+    title: String!
+    description: String
+    category: Category!
+    year: Int
+    director: String
+    actors: [String!]
+  }
+
+

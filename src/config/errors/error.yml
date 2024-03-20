@@ -1,0 +1,28 @@
+general:
+  date:
+    invalid:
+      key: general.date.invalid
+      code: BAD_REQUEST
+      message: La fecha es inválida.
+      message_eng: Date is not valid.
+      status: 400
+  time:
+    invalid:
+      key: general.time.invalid
+      code: BAD_REQUEST
+      message: La hora es inválida.
+      message_eng: Time is not valid.
+      status: 400
+  item:
+    already_exist:
+      key: general.item.already_exist
+      code: BAD_REQUEST
+      message: El ítem ya existe.
+      message_eng: This item already exists.
+      status: 400
+    not_exist:
+      key: general.item.not_exist
+      code: BAD_REQUEST
+      message: El ítem no existe.
+      message_eng: This item does not exist.
+      status: 404
