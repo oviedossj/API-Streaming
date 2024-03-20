@@ -21,5 +21,11 @@ To run this project in Local the command that you need use is:
         docker-compose up -d
 
         npm run dev
+        
+## Run testing
+
+To run test on this project in Local the command that you need use is:
+
+        npm run test 
 
 
